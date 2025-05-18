@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="icon" type="image" href="/images/bonfire.gif" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <title>Habilidades</title>
-</head>
-<body>
-    <center>
-        <h2>Habilidades</h2>
-    </center>
-    <h2>
-        Hard Skills
-    </h2>
-    <p>
-    <ul>
-        <li>
-             Linguagens de Programação – Python, Java, JavaScript, C#, TypeScript.
-        </li>
-        <li>
-             Desenvolvimento Web – HTML, CSS, React, Node.js.
-        </li>
-        <li>
-             Banco de Dados – SQL (MySQL, PostgreSQL).
-        </li>
-        <li>
-             Versionamento de Código – Git e GitHub.
-        </li>
-    </ul>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Habilidades</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">Hard Skills</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Linguagens – Python, Java, JavaScript, C#, TypeScript
+              </li>
+              <li class="list-group-item">
+                Desenvolvimento Web – HTML, CSS, React, Node.js
+              </li>
+              <li class="list-group-item">
+                Banco de Dados – SQL (MySQL, PostgreSQL)
+              </li>
+              <li class="list-group-item">Versionamento – Git e GitHub</li>
+            </ul>
+          </div>
+        </div>
 
-    <h2>
-        Soft Skills
-    </h2>
-    <p>
-    <ul>
-        <li>
-             Comunicação 
-        </li>
-        <li>
-             Trabalho em equipe
-        </li>
-        <li>
-             Adaptabilidade
-        </li>
-        <li>
-             Resolução de problemas
-        </li>
-        <li>
-             Gestão do tempo 
-        </li>
-        <li>
-             Criatividade 
-        </li>
-    </ul>
-    </p>
-
-</body>
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-success text-white">Soft Skills</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Comunicação</li>
+              <li class="list-group-item">Trabalho em equipe</li>
+              <li class="list-group-item">Adaptabilidade</li>
+              <li class="list-group-item">Resolução de problemas</li>
+              <li class="list-group-item">Gestão do tempo</li>
+              <li class="list-group-item">Criatividade</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

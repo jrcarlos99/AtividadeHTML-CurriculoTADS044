@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Formulário Organizado</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">Cadastro de Contato</h4>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputFirstName">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputFirstName"
+                  placeholder="Nome"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputLastName">Sobrenome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputLastName"
+                  placeholder="Sobrenome"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputPhone">Telefone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputPhone"
+                  placeholder="(99) 99999-9999"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="seu@exemplo.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputMessage">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="inputMessage"
+                rows="3"
+                placeholder="Digite sua mensagem..."
+              ></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="selectLanguage">Língua</label>
+                <select class="form-control" id="selectLanguage">
+                  <option>Inglês</option>
+                  <option>Espanhol</option>
+                  <option>Francês</option>
+                  <option>Português (pt-BR)</option>
+                  <option>Alemão</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputFile">Protótipo (Requisitos)</label>
+                <input type="file" class="form-control-file" id="inputFile" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="selectTech">Linguagens Preferidas</label>
+              <select class="form-control" id="selectTech">
+                <option>Java</option>
+                <option>C#</option>
+                <option>C++</option>
+                <option>PHP</option>
+                <option>JavaScript</option>
+              </select>
+            </div>
+
+            <fieldset class="form-group">
+              <legend class="col-form-label pt-0">
+                Banco de Dados Favorito
+              </legend>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="dbRadio"
+                  id="dbMySQL"
+                  value="mysql"
+                  checked
+                />
+                <label class="form-check-label" for="dbMySQL">MySQL</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="dbRadio"
+                  id="dbPostgres"
+                  value="postgres"
+                />
+                <label class="form-check-label" for="dbPostgres"
+                  >PostgreSQL</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="dbRadio"
+                  id="dbMongo"
+                  value="mongo"
+                />
+                <label class="form-check-label" for="dbMongo">MongoDB</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="dbRadio"
+                  id="dbNone"
+                  value="none"
+                />
+                <label class="form-check-label" for="dbNone">N/A</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="dbRadio"
+                  id="dbOther"
+                  value="other"
+                />
+                <label class="form-check-label" for="dbOther">Outra</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend class="col-form-label">
+                Turno preferido para reuniões
+              </legend>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="turnMorning"
+                  value="morning"
+                />
+                <label class="form-check-label" for="turnMorning">Manhã</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="turnAfternoon"
+                  value="afternoon"
+                />
+                <label class="form-check-label" for="turnAfternoon"
+                  >Tarde</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="turnEvening"
+                  value="evening"
+                />
+                <label class="form-check-label" for="turnEvening">Noite</label>
+              </div>
+            </fieldset>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="meetingTime">Horário sugerido</label>
+                <input
+                  type="time"
+                  class="form-control"
+                  id="meetingTime"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="desiredDate">Previsão de entrega</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="desiredDate"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group text-right">
+              <button type="reset" class="btn btn-secondary mr-2">
+                Limpar
+              </button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
